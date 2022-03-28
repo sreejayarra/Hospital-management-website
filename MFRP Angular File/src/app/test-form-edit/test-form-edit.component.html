@@ -1,0 +1,23 @@
+<h2 style="font-family: 'Times New Roman', Times, serif;">TEST EDIT</h2>
+<form [formGroup]="editEmp1" (ngSubmit)="submission()" >
+    <div class="user-details input">
+        <div class="form-group inputBox">
+            <label for="test" class="details">Name :</label><br>
+            <input type="text" formControlName="test" placeholder="test" id="test">
+        </div>
+        <div class="form-group inputBox">
+            <label for="price" class="details">PhoneNumber :</label><br>
+            <input type="text" formControlName="price" placeholder="price" id="price">
+        </div>
+        <br>
+        <div class="button">
+            
+            <button type="submit" class="btn btn-success">update</button> &nbsp;
+            <a routerLink="/testsEdit"><button class="btn btn-success">test page</button> </a>
+                               
+        </div>
+    </div>
+    
+
+    
+</form>

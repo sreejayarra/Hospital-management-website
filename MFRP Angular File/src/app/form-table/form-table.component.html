@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="title">
+            Update your Appointment
+        </div>
+        <form [formGroup]="editEmp" (ngSubmit)="submission()" >
+            <div class="user-details">
+                <div class="form-group inputBox">
+                    <label for="name" class="details">Name :</label>
+                    <input type="text" formControlName="name" placeholder="name" id="name">
+                </div>
+                <div class="form-group inputBox">
+                    <label for="phoneNumber" class="details">PhoneNumber :</label>
+                    <input type="text" formControlName="PhoneNumber" placeholder="phoneNumber" id="phoneNumber">
+                </div>
+                <div class="form-group inputBox">
+                    <label for="date" class="details">Date :</label>
+                    <input type="date" formControlName="date" placeholder="date" id="date">
+                </div>
+                <div class="form-group inputBox">
+                    <label for="specialization" class="details">Specialization :</label>
+                    <select formControlName="specialization" id="specialization" (change)="selectChangeHandler($event)" >
+                        <option>-- Select department --</option>
+                        <option *ngFor="let wow of sampleData2">
+                            {{wow.specialization}}
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group inputBox">
+                    <label for="doctorName" class="details">Doctor :</label>
+                    <select formControlName="doctorName" id="doctorName">
+                        <option>-- select doctor --</option>
+                        <ng-container *ngFor="let wow1 of sampleData2">
+                            <ng-container *ngIf="selectedDay===wow1.specialization">
+                                <option>{{wow1.doctor1}}</option>
+                                <option>{{wow1.doctor2}}</option>
+                                <option>{{wow1.doctor3}}</option>
+                                <option>{{wow1.doctor4}}</option>
+                                <option>{{wow1.doctor5}}</option>
+                            </ng-container>
+                        </ng-container>
+                    </select>
+                </div>
+                <div class="form-group inputBox">
+                    <label for="timeSlot" class="details">Time Slot :</label>
+                    <select formControlName="timeSlot" id="timeSlot">
+                        <option>9:00 AM TO 10:30AM</option>
+                        <option>11:30AM TO 1:00 PM</option>
+                        <option>3:00PM TO 4PM</option>
+                        <option>5:00PM TO 6:30PM</option>
+                    </select>
+                </div>
+                <div class="button">
+                    
+                    <button type="submit" class="btn btn-success" >update</button> &nbsp;
+                    
+                    <a routerLink="/home"><button class="btn btn-success">go to home</button> </a>
+                                       
+                </div>
+            </div>
+            
+        
+            
+        </form>
+    
+      </div>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>
+

@@ -1,0 +1,128 @@
+/* input[type=text],input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  } */
+body{
+    
+    height: 120vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: linear-gradient(135deg, rgb(209, 141, 15), rgb(228, 221, 221));
+    padding: 20px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(90deg, rgb(221, 147, 9), rgb(209, 200, 200));
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0px 12px 0px;
+}
+form  .user-details .inputBox{
+    margin-bottom: 15px;
+    width: calc(100% /2 - 20px);
+}
+.user-details .inputBox input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.user-details .inputBox select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.user-details .inputBox .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+.button{
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+.details{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.title{
+    font-family: 'Times New Roman', Times, serif
+}
+
+.searchText{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black
+}
+.elseText{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+.tableBox{
+    margin: auto;
+
+}
+.content-table{
+    font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.content-table td, .content-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+.content-table tr:hover {background-color: #ddd;}
+.content-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+  }
+  .content-table td{
+      text-align: center;
+  }
+.searchInput{
+    width: 200px;
+    height: 40px;
+}
+.searchBox{
+    margin-top: 20px;
+   display: flex;
+   justify-content: space-evenly;
+}

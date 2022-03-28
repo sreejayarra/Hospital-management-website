@@ -1,0 +1,19 @@
+.hello{
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 6px;
+    margin-right:  6px;
+}
+.logo{
+    padding-left: 25px;
+}
+li:hover{
+    background-color: whitesmoke;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-radius: 1px;
+}
+.dropdown:hover>.dropdown-menu {
+    display:block;
+}

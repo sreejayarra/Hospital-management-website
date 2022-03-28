@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="font-family: 'Times New Roman', Times, serif;">DOCTOR UPDATE</h2>
+<form [formGroup]="editEmp2" (ngSubmit)="submission()" >
+    <div class="user-details input">
+        <div class="form-group inputBox">
+            <label for="specialization" class="details">specialization</label><br>
+            <input type="text" formControlName="specialization" placeholder="specialization" id="specialization">
+        </div>
+        <div class="form-group inputBox">
+            <label for="picture1" class="details">picture1 :</label><br>
+            <input type="text" formControlName="picture1" placeholder="picture1" id="picture1">
+        </div>
+        <div class="form-group inputBox">
+            <label for="doctor1" class="details">doctor1 :</label><br>
+            <input type="text" formControlName="doctor1" placeholder="doctor1" id="doctor1">
+        </div>
+        <div class="form-group inputBox">
+            <label for="picture2" class="details">picture2 :</label><br>
+            <input type="text" formControlName="picture2" placeholder="picture2" id="picture2">
+        </div>
+        <div class="form-group inputBox">
+            <label for="doctor2" class="details">doctor2 :</label><br>
+            <input type="text" formControlName="doctor2" placeholder="doctor2" id="doctor2">
+        </div>
+        <div class="form-group inputBox">
+            <label for="picture3" class="details">picture3 :</label><br>
+            <input type="text" formControlName="picture3" placeholder="picture3" id="picture3">
+        </div>
+        <div class="form-group inputBox">
+            <label for="doctor3" class="details">doctor3 :</label><br>
+            <input type="text" formControlName="doctor3" placeholder="doctor3" id="doctor3">
+        </div>
+        <div class="form-group inputBox">
+            <label for="picture4" class="details">picture4 :</label><br>
+            <input type="text" formControlName="picture4" placeholder="picture4" id="picture4">
+        </div>
+        <div class="form-group inputBox">
+            <label for="doctor4" class="details">doctor4 :</label><br>
+            <input type="text" formControlName="doctor4" placeholder="doctor4" id="doctor4">
+        </div>
+        <div class="form-group inputBox">
+            <label for="picture5" class="details">picture5 :</label><br>
+            <input type="text" formControlName="picture5" placeholder="picture5" id="picture5">
+        </div>
+        <div class="form-group inputBox">
+            <label for="doctor5" class="details">doctor5 :</label><br>
+            <input type="text" formControlName="doctor5" placeholder="doctor5" id="doctor5">
+        </div>
+        <br>
+        <div class="button">
+            
+            <button type="submit" class="btn btn-success">update</button> &nbsp;
+            <a routerLink="/doctorUpdate"><button class="btn btn-success">back</button> </a>
+                               
+        </div>
+    </div>
+    
+
+    
+</form>
+</body>
+</html>
